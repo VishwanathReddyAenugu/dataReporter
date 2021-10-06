@@ -8,16 +8,19 @@ class Report:
 
     def eda(self):
         numericalColumns = self.df.select_dtypes(include = ["int64","float64","datetime64[ns]"]).columns
-        print(" Size of the data set is",self.df.shape,"\n\n","Number of Unique values per column \n")
+        print(" Size of the data set is",self.df.shape,"\n\n","\n")
         for column in self.df.columns:
             if(self.df[column].unique().shape[0] ==1 ):
-                print("column " ,column, " has zero variance")
+                print("\ncolumn: ",column )
+                print(column, " has zero variance")
             elif(self.df[column].unique().shape[0] > 1 and self.df[column].unique().shape[0] < 100):
+                print("\ncolumn: ",column )
                 print(column," : ",self.df[column].unique().shape[0]) 
                 if column in numericalColumns:
                     print(f"max = {self.df[column].max()}, min = {self.df[column].min()}, range = {self.df[column].max() - self.df[column].min()}")
                 print(self.df[column].unique())
             else:
+                print("\ncolumn: ",column )
                 print(f"Number of Unique values in {column} : {self.df[column].unique().shape[0]}")
                 if column in numericalColumns:
                     print(f"max = {self.df[column].max()}, min = {self.df[column].min()}, range = {self.df[column].max() - self.df[column].min()}")

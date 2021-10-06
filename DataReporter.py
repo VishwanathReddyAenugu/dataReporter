@@ -7,7 +7,7 @@ class Report:
         
 
     def eda(self):
-        numericalColumns = self.df.select_dtypes(include = ["int64","float64","datetime64[ns]"]).columns
+        numericalColumns = self.df.select_dtypes(include = ["int64","float64","datetime64[ns]"]).columns 
         print(" Size of the data set is",self.df.shape,"\n")
         for column in self.df.columns:
             if(self.df[column].unique().shape[0] ==1 ):

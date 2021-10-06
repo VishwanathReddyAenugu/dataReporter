@@ -22,4 +22,6 @@ import DataReporter
 report = Report(df)  
 # for jupyter notebooks include " %run -i DataReporter.py"
 report.eda()
-report.missing()
+report.missing() 
+
+report.everythingAboutData()

@@ -9,6 +9,9 @@ objectives:
 1) Report number of unique values per column
 2) Report percentage of Missing values per column
 3) Report outliers
+4) Report feature frequency in categorical columns
+5) Report mean, median among numerical features
+6) Report correlations, statistical tests, p-values and other inferences
 
 
 

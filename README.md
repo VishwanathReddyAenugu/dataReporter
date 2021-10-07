@@ -12,6 +12,8 @@ objectives:
 4) Report feature frequency in categorical columns
 5) Report mean, median among numerical features
 6) Report correlations, statistical tests, p-values and other inferences
+7) Trim begining and ending column spaces
+8) Replace inbetween spaces with underscores 
 
 
 

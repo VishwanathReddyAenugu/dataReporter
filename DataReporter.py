@@ -25,7 +25,7 @@ class Report:
                 print(f"Number of Unique values: {self.df[column].unique().shape[0]}")
                 if column in numericalColumns:
                     print(f"min = {self.df[column].min()}, max = {self.df[column].max()}, range = {self.df[column].max() - self.df[column].min()}")
-               
+
 
 
     def missing(self):
@@ -39,3 +39,6 @@ class Report:
         matplotlib.pyplot.xticks(fontsize=18, rotation=90,weight = 'bold')
         matplotlib.pyplot.yticks(fontsize=18, weight = 'bold')        
         series.plot.bar()
+
+
+        

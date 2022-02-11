@@ -31,4 +31,4 @@ report.eda()
 report.missing() 
 
 
-report.everythingAboutData()
+report.univarDist()
